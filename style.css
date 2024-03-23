@@ -1,0 +1,159 @@
+/*#202020 - titulo
+#1CBFBC - botão
+#EDF2F4 - background*/
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #8dc3d8;
+}
+
+header{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h1{
+    margin: 15px;
+    color: #202020;
+    text-align: center;
+}
+
+div#imagemJogo{
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button#comecar{
+    background-color: #1CBFBC;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 4px;
+    padding: 5px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+button#comecar:hover{
+    background-color: #66dfdd;
+    transition: 0.2s ease-out;
+}
+
+section#jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button#jogar{
+    background-color: #1CBFBC;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    width: 60px;
+    margin: 5px;
+}
+
+button#jogar:hover{
+    background-color: #66dfdd;
+    transition: 0.2s ease-out;
+}
+
+div#contador{
+    color: #202020;
+    font-size: 1.1em;
+}
+
+p#usuario{
+    color: #202020;
+    font-size: 1.1em;
+    margin: 5px;
+}
+
+div#escolhaUsuario img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #66dfdd;
+    margin: 5px;
+    transform: rotate(0deg) scale(0);  
+    animation: aparecer 1s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+    to {
+      transform: rotate(360deg) scale(1); 
+    }
+}
+
+div#escolhaUsuario img:hover{
+    opacity: 0.5;
+}
+
+div#versus img{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    transform: scale(0);  
+    animation: aparecerVs 2s ease-in-out forwards;
+}
+
+@keyframes aparecerVs {
+    to {
+      transform: scale(1); 
+    }
+}
+
+div#escolhaAleatorio img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #66dfdd;
+    margin: 5px;
+    transform: rotate(0deg) scale(0);  
+    animation: aparecerAleatorio 3s ease-in-out forwards;
+}
+
+@keyframes aparecerAleatorio {
+    to {
+      transform: rotate(3600deg) scale(1); 
+    }
+}
+
+#contador{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#contador #vitoria{
+    display: flex;
+}
+
+#contador #derrota{
+    display: flex;
+}
+
+#contador p{
+    margin-right: 2px;
+    
+}
+
+.selecionado{
+    opacity: 0.5;
+}

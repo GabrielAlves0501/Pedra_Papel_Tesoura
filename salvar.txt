@@ -1,0 +1,21 @@
+<!--<section id="jogo">
+            <p id="usuario">Escolha:</p>
+            <div id="escolhaUsuario">
+                <img src="papel.png" alt="">
+                <img src="pedra.png" alt="">
+                <img src="tesoura.png" alt="">
+            </div>
+            <div id="versus">
+                <img src="vs.png" alt="">
+            </div>
+            <div id="escolhaAleatorio">
+                
+            </div>
+            <button id="jogar" >Jogar!</button>
+            <div id="contador">
+                <p id="vitoria">Vitórias: </p>
+                <span id="numeroVitorias"></span>
+                <p id="derrota">Derrotas: </p>
+                <span id="numeroDerrotas"></span>
+            </div>
+        </section>-->
